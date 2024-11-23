@@ -10,25 +10,24 @@ const banners = [
   {
     id: 1,
     title: "SMART WEARABLE",
-    subtitle: "Best Deal Online on Smart Watches",
-    offer: "UP to 80% OFF",
+    description: "Discover our latest collection of smart watches with advanced features and sleek designs.",
+    buttonText: "Shop Now",
     imageUrl: "/vercel.svg",
   },
   {
     id: 2,
-    title: "SMART WEARABLE",
-    subtitle: "Best Deal Online on Smart Watches",
-    offer: "UP to 80% OFF",
+    title: "NEW ARRIVALS",
+    description: "Experience the future of wearable technology with our newest smart watch models.",
+    buttonText: "Explore More",
     imageUrl: "/vercel.svg",
   },
   {
     id: 3,
-    title: "SMART WEARABLE",
-    subtitle: "Best Deal Online on Smart Watches",
-    offer: "UP to 80% OFF",
+    title: "SPECIAL OFFER",
+    description: "Limited time offer on premium smart watches. Don't miss out on amazing deals.",
+    buttonText: "View Deals",
     imageUrl: "/vercel.svg",
   },
-  // Add more banner objects as needed
 ];
 
 const SwiperComponent = () => {
@@ -44,31 +43,37 @@ const SwiperComponent = () => {
         delay: 3000,
         disableOnInteraction: false,
       }}
-      className="h-[300px]"
+      className="h-[400px]"
     >
       {banners.map((banner) => (
         <SwiperSlide key={banner.id}>
-          <div className="h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4">
-                {banner.title}
-              </h1>
-              <p className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-4">
-                {banner.subtitle}
-              </p>
-              <p className="text-base sm:text-lg md:text-xl font-semibold">
-                {banner.offer}
-              </p>
-            </div>
-            <div className="absolute right-4 sm:right-6 lg:right-10 bottom-5 w-32 sm:w-48 md:w-56 lg:w-64">
-              <Image
-                src={banner.imageUrl}
-                alt="Smart Watch"
-                className="w-full object-cover"
-                width={256}
-                height={256}
-                priority={true}
-              />
+          <div className="relative h-full p-12">
+            <div className="container mx-auto h-full flex items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4">
+                {/* Text Content */}
+                <div className="space-y-4 text-left">
+                  <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+                    {banner.title}
+                  </h1>
+                  <p className="text-lg text-gray-600">
+                    {banner.description}
+                  </p>
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md transition duration-300">
+                    {banner.buttonText}
+                  </button>
+                </div>
+                
+                {/* Image */}
+                <div className="relative h-[300px]">
+                  <Image
+                    src={banner.imageUrl}
+                    alt={banner.title}
+                    fill
+                    className="object-contain"
+                    priority={true}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </SwiperSlide>
