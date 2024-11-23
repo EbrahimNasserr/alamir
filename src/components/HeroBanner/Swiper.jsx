@@ -12,21 +12,21 @@ const banners = [
     title: "SMART WEARABLE",
     description: "Discover our latest collection of smart watches with advanced features and sleek designs.",
     buttonText: "Shop Now",
-    imageUrl: "/vercel.svg",
+    imageUrl: "/about-removebg-preview.png",
   },
   {
     id: 2,
     title: "NEW ARRIVALS",
     description: "Experience the future of wearable technology with our newest smart watch models.",
     buttonText: "Explore More",
-    imageUrl: "/vercel.svg",
+    imageUrl: "/about-removebg-preview.png",
   },
   {
     id: 3,
     title: "SPECIAL OFFER",
     description: "Limited time offer on premium smart watches. Don't miss out on amazing deals.",
     buttonText: "View Deals",
-    imageUrl: "/vercel.svg",
+    imageUrl: "/about-removebg-preview.png",
   },
 ];
 
