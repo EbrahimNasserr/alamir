@@ -43,7 +43,6 @@ const SwiperComponent = () => {
         delay: 3000,
         disableOnInteraction: false,
       }}
-      className="h-[400px]"
     >
       {banners.map((banner) => (
         <SwiperSlide key={banner.id}>
@@ -52,7 +51,7 @@ const SwiperComponent = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-4">
                 {/* Text Content */}
                 <div className="space-y-4 text-left">
-                  <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+                  <h1 className="text-4xl md:text-5xl font-bold text-slate-600">
                     {banner.title}
                   </h1>
                   <p className="text-lg text-gray-600">
