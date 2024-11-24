@@ -40,7 +40,7 @@ const SimilarProducts = () => {
       description: "Description for product 5",
       price: 99.99,
       image:
-        "https://images.unsplash.com/photo-1570194065650-d99fb4b8ccb0?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1601612628452-9e99ced43524?q=80&w=1000&auto=format&fit=crop",
     },
     // ... add more products
   ];
@@ -48,7 +48,7 @@ const SimilarProducts = () => {
     <section className="py-10 px-4">
       <div className="max-w-screen-xl mx-auto">
         <h2 className="text-4xl  text-center sm:text-left font-bold text-slate-600 uppercase mb-5">
-          Similar Products
+          You may also like
         </h2>
         <GlobalSwiper products={products} />
       </div>

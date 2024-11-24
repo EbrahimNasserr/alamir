@@ -39,7 +39,7 @@ const ProductsBestSeller = () => {
       description: "Description for product 5",
       price: 99.99,
       image:
-        "https://images.unsplash.com/photo-1570194065650-d99fb4b8ccb0?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1601612628452-9e99ced43524?q=80&w=1000&auto=format&fit=crop",
     },
     // ... add more products
   ];
